@@ -11,6 +11,7 @@
     "console-stamp": "^0.2.9",
     "cookie-parser": "~1.4.5",
     "debug": "~4.1.1",
+    "email-validator": "^2.0.4",
     "express": "~4.17.1",
     "express-validator": "^6.6.1",
     "hash-equals": "^0.0.3",

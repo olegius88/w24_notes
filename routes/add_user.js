@@ -26,43 +26,34 @@ router.get('/', async function (req, res, next) {
 router.post('/', async function(req, res, next) {
   // console.log('authenticate|req=', req);
 
-
-
-  if (req.body.email) {
-
-  }
-  if (req.body.psw1) {
-
-  }
-
   // Добавление пользователя
   const ucRes = await Auth.userCreate({
-    email   : req.body.inputEmail,
-    password: req.body.inputPassword,
+    email   : req.body.email,
+    password: req.body.psw1,
   })
-  console.log('authenticate|ucRes=', ucRes);
+  // console.log('authenticate|ucRes=', ucRes);
 
   if (ucRes.status == 'error') {
-    return res.render('error', {title: 'Notes', message: ucRes.msg,});
+    return res.json(ucRes);
   }
 
   // Авторизация пользователя
   const lRes = await Auth.userLogin({
     hostname  : req.hostname,
-    email     : req.body.inputEmail,
-    password  : req.body.inputPassword,
+    email     : req.body.email,
+    password  : req.body.psw1,
     rememberme: req.body.rememberme,
     ip        : req.ip,
     user_agent: req.headers['user-agent'],
   })
-  console.log('authenticate|lRes=', lRes);
+  // console.log('authenticate|lRes=', lRes);
 
   if (lRes.status != 'ok') {
     return res.render('error', {title: 'Notes', message: lRes.msg,});
   }
 
   res.cookie(lRes.cookies.cookie1.name, lRes.cookies.cookie1.value, lRes.cookies.cookie1.params);
-  res.render('auth_form', {title: 'Notes '});
+  res.json({status: 'ok', });
 });
 
 module.exports = router;

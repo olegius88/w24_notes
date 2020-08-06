@@ -1,3 +1,138 @@
+GET http://127.0.0.1:3000/api/notes?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1&page=2
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041850.200.json
+
+###
+
+GET http://127.0.0.1:3000/api/notes?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1&page=20
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041843.200.json
+
+###
+
+GET http://127.0.0.1:3000/api/notes?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1&page=2
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041834.200.json
+
+###
+
+GET http://127.0.0.1:3000/api/notes?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1&page=1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041826.200.json
+
+###
+
+POST http://127.0.0.1:3000/api/notes?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1&page=1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041800.404.html
+
+###
+
+POST http://127.0.0.1:3000/api/notes/unshare/22?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041535.200.json
+
+###
+
+POST http://127.0.0.1:3000/api/notes/share/22?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041526.200.json
+
+###
+
+POST http://127.0.0.1:3000/api/notes/unshare/22?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041521.200.json
+
+###
+
+POST http://127.0.0.1:3000/api/notes/unshare/22?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041445.200.json
+
+###
+
+POST http://127.0.0.1:3000/api/notes/add?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1&note_text=787878787878888
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041310.200.json
+
+###
+
+POST http://127.0.0.1:3000/api/notes/remove/21?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041210.200.json
+
+###
+
+POST http://127.0.0.1:3000/api/notes/edit/21?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1&note_text=7ooo8
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041201.200.json
+
+###
+
+POST http://127.0.0.1:3000/api/notes/add?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1&note_text=787878787878888
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041145.200.json
+
+###
+
+POST http://127.0.0.1:3000/api/notes/add/token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1&note_text=787878787878888
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041056.404.html
+
+###
+
+POST http://127.0.0.1:3000/api/notes/add/token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1&note_text=787878787878888
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+<> 2020-08-07T041024.404.html
+
+###
+
 POST http://127.0.0.1:3000/api/notes/remove/1?token=KitYxBAggryo1sTnCYeUVul6DLo=&user_id=1
 Accept: */*
 Cache-Control: no-cache
@@ -278,120 +413,6 @@ Cache-Control: no-cache
 POST http://127.0.0.1:3000/api/reg?email=sh.oleg@list.ru&password=1212
 Accept: */*
 Cache-Control: no-cache
-
-###
-
-POST http://127.0.0.1:3000/api/reg?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-POST http://127.0.0.1:3000/api/auth?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-06T122125.200.json
-
-###
-
-POST http://127.0.0.1:3000/api/auth?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-06T121730.200.json
-
-###
-
-POST http://127.0.0.1:3000/api/reg?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-05T063754.200.json
-
-###
-
-POST http://127.0.0.1:3000/api/auth?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-05T063649.200.json
-
-###
-
-POST http://127.0.0.1:3000/api/auth?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-05T063643.200.json
-
-###
-
-POST http://127.0.0.1:3000/api/auth?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-05T063624.200.json
-
-###
-
-POST http://127.0.0.1:3000/api/auth?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-POST http://127.0.0.1:3000/api/auth?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-POST http://127.0.0.1:3000/api/reg?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-05T061518.200.json
-
-###
-
-POST http://127.0.0.1:3000/api/reg?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-05T061254.200.json
-
-###
-
-POST http://127.0.0.1:3000/api/reg?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-05T061107.200.json
-
-###
-
-POST http://127.0.0.1:3000/api/reg?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-05T061101.200.json
-
-###
-
-POST http://127.0.0.1:3000/api/reg?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-05T061002.200.json
-
-###
-
-POST http://127.0.0.1:3000/api/reg?email=sh.oleg@list.ru&password=1212
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-08-05T060449.200.json
 
 ###
 

@@ -69,14 +69,14 @@ notes|nbRes= {
 			return {
 				status: 'not_found',
 				msg   : 'Заметка не найдена',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 		if (!gRes.note.shared) {
 			return {
 				status: 'not_found',
 				msg   : 'Заметка не найдена',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -123,14 +123,14 @@ notes|nbRes= {
 			return {
 				status: 'need_auth',
 				msg: 'Требуется авторизация для доступа к заметке',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 		if (lRes.id != gRes.note.user_id) {
 			return {
 				status: 'need_auth',
 				msg: 'Требуется авторизация для доступа к заметке',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -220,7 +220,7 @@ notes|nbRes= {
 			console.error('userLogin|update|error=', error)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -297,20 +297,20 @@ notes|nbRes= {
 			console.error('notesAdd|insertNote|error=', error)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
 		if (!inRes) {
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 		if (!inRes.dataValues) {
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -378,7 +378,7 @@ notes|nbRes= {
 			console.error('removeNoteBrowser|update|error=', error)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -433,7 +433,7 @@ notes|nbRes= {
 		let fRes
 		try {
 			fRes = await db.Notes.findOne(qu)
-			console.log('notes|fRes=', fRes)
+			// console.log('notes|fRes=', fRes)
 			/*
 notes|fRes={
     id: 5,
@@ -449,7 +449,7 @@ notes|fRes={
 			return {
 				status: 'error',
 				msg   : 'Ошибка в получении данных',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -530,7 +530,7 @@ notes|fRes= [
 			return {
 				status: 'error',
 				msg   : 'Ошибка в получении данных',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -562,7 +562,7 @@ notes|fRes= [
 			console.error('notesApiRemove|tvRes.status != ok|$data=', $data)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -610,7 +610,7 @@ notes|nbRes= {
 			console.error('notesApiRemove|update|error=', error)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -637,7 +637,7 @@ notes|nbRes= {
 			console.error('notesApiEdit|tvRes.status != ok|$data=', $data)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -645,7 +645,7 @@ notes|nbRes= {
 			console.error('notesApiEdit|!$data.user_id|$data=', $data)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -702,7 +702,7 @@ notes|nbRes= {
 			console.error('notesApiEdit|update|error=', error)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -729,7 +729,7 @@ notes|nbRes= {
 			console.error('notesApiEdit|tvRes.status != ok|$data=', $data)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -786,7 +786,7 @@ notes|nbRes= {
 			console.error('notesApiEdit|update|error=', error)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -814,7 +814,7 @@ notes|nbRes= {
 			console.error('tokenValidator|tvRes.status != ok|$data=', $data)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -822,7 +822,7 @@ notes|nbRes= {
 			console.error('tokenValidator|!$data.user_id|$data=', $data)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -859,20 +859,20 @@ notes|nbRes= {
 			console.error('notesAdd|insertNote|error=', error)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
 		if (!inRes) {
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 		if (!inRes.dataValues) {
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 

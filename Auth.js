@@ -1,6 +1,7 @@
 const isDebug = process.env.IN_WORKS !== undefined;
 require('./Mg');
 
+const validator = require("email-validator");
 const crypto = require('crypto');
 const hashEquals = require('hash-equals');
 const hash = require('hash.js');
@@ -77,7 +78,7 @@ class Auth {
       return {
         status : 'error',
         msg: 'host undefined',
-        line  : __fili,
+        // line  : __fili,
       };
     }
 
@@ -88,7 +89,7 @@ class Auth {
       return {
         status : 'error',
         msg: 'Необходимо авторизоваться',
-        line  : __fili,
+        // line  : __fili,
       };
     }
 
@@ -96,7 +97,7 @@ class Auth {
       return {
         status: 'cookies_not_found',
         msg: 'Необходимо авторизоваться',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -106,7 +107,7 @@ class Auth {
       return {
         status: 'cookies_not_found',
         msg: 'Необходимо авторизоваться',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -121,7 +122,7 @@ class Auth {
         status: 'cookies_not_found',
         res: 1,
         msg: 'Необходимо авторизоваться',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -148,7 +149,7 @@ logged_in|fRes= {
       return {
         status: 'error',
         msg: 'Ошибка в получении данных',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -156,7 +157,7 @@ logged_in|fRes= {
       return {
         status: 'not_found',
         msg: 'Пользователь не найден',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -172,7 +173,7 @@ logged_in|fRes= {
       return {
         status: 'hash_error',
         msg: 'hash error',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -186,7 +187,7 @@ logged_in|fRes= {
       return {
         status: 'error',
         msg: 'parse session tokens error',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -198,20 +199,20 @@ logged_in|fRes= {
         return {
           status: 'hash_error',
           msg: 'expiration verifier error 1',
-          line  : __fili,
+          // line  : __fili,
         }
       }
     } else {
       return {
         status: 'hash_error',
         msg: 'expiration verifier error 2',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
     return {
       status: 'ok',
-      line  : __fili,
+      // line  : __fili,
       id    : fRes.id,
       email : fRes.email,
 
@@ -242,21 +243,21 @@ userLogin|data= {
       return {
         status: 'error',
         msg: 'hostname incorrect',
-        line  : __fili,
+        // line  : __fili,
       }
     }
     if (!data.email) {
       return {
         status: 'error',
         msg: 'email incorrect',
-        line  : __fili,
+        // line  : __fili,
       }
     }
     if (!data.password) {
       return {
         status: 'error',
         msg: 'password incorrect',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -266,7 +267,7 @@ userLogin|data= {
       return {
         status: 'error',
         msg: 'host not found',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -278,7 +279,7 @@ userLogin|data= {
       return {
         status: 'error',
         msg: 'Введите логин и пароль',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -292,7 +293,7 @@ userLogin|data= {
       return {
         status: 'error',
         msg: 'Ошибка в получении данных',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -300,7 +301,7 @@ userLogin|data= {
       return {
         status: 'not_found',
         msg: 'Пользователь не найден',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -308,7 +309,7 @@ userLogin|data= {
       return {
         status: 'credential_error',
         msg: 'Пароль не верен.',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -343,7 +344,7 @@ userLogin|data= {
       console.error('userLogin|update|error=', error)
       return {
         status: 'error',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -370,7 +371,7 @@ userLogin|data= {
     return {
       status: 'ok',
       cookies: cookies,
-      line  : __fili,
+      // line  : __fili,
     }
   }
 
@@ -455,7 +456,7 @@ logout|aRes= {
       console.error('logout|update|error=', error)
       return {
         status: 'error',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -469,22 +470,30 @@ logout|aRes= {
    * Добавление пользователя
    */
   async userCreate(data) {
-    // console.log('userCreate|data=', data)
+    console.log('userCreate|data=', data)
 
     if (!data.email) {
       return {
         status: 'error',
         msg   : 'email data incorrect',
-        line  : __fili,
+        // line  : __fili,
       }
     }
     data.email = data.email.trim();
+
+    if (!validator.validate(data.email)) {
+      return {
+        status: 'error',
+        msg   : 'Email не корректный',
+        // line  : __fili,
+      }
+    }
 
     if (!data.password) {
       return {
         status: 'error',
         msg   : 'password data incorrect',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -514,7 +523,7 @@ logout|aRes= {
       return {
         status: 'email_exists',
         data  : eeRes.res,
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
@@ -551,27 +560,27 @@ logout|aRes= {
       console.error('userCreate|insertUser|error=', error)
       return {
         status: 'error',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
     if (!inRes) {
       return {
         status: 'error',
-        line  : __fili,
+        // line  : __fili,
       }
     }
     if (!inRes.dataValues) {
       return {
         status: 'error',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
     return {
       status: 'ok',
       data  : inRes.dataValues,
-      line  : __fili,
+      // line  : __fili,
     }
   }
 
@@ -604,13 +613,13 @@ emailExists|res= {
       console.error('emailExists|error=', error)
       return {
         status: 'error',
-        line  : __fili,
+        // line  : __fili,
       }
     }
 
     return {
       status: 'ok',
-      line  : __fili,
+      // line  : __fili,
       res   : res,
     }
   }

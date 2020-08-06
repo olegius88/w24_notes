@@ -172,7 +172,7 @@ router.post('/add', async function(req, res, next) {
     return res.json(enRes);
   }
 
-  return res.json({status: 'ok', note_id: enRes.dataValues.id});
+  return res.json({status: 'ok', note_id: enRes.id});
 })
 
 

@@ -20,9 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f43c54d-2e80-4641-849a-98ea4fe20c70" name="Default Changelist" comment="Init">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T060449.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T061002.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T061101.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T061107.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T061254.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T061518.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T063624.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T063643.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T063649.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T063754.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-06T121730.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-06T122125.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/Auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/add_user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/add_user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/notes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/note_add.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/note_add.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/note_edit.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/note_edit.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/notes.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/notes.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +105,377 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="20" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes/unshare/22" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes/share/22" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes/add" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="note_text" />
+                <option name="value" value="787878787878888" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes/remove/21" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes/edit/21" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="note_text" />
+                <option name="value" value="7ooo8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes/add/token=KitYxBAggryo1sTnCYeUVul6DLo=&amp;user_id=1&amp;note_text=787878787878888" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://127.0.0.1:3000/api/notes/remove/1" />
@@ -395,6 +787,21 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="rest-api#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api#7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api#8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="8" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api#9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="9" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name=" Регистрация пользователя через АПИ" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -440,7 +847,21 @@
       <item itemvalue="Jest.Notes.test.js" />
       <item itemvalue="Jest.Auth.test.js" />
       <item itemvalue="Node.js.app.js" />
+      <item itemvalue="HTTP Request.rest-api#4" />
+      <item itemvalue="HTTP Request.rest-api#6" />
+      <item itemvalue="HTTP Request.rest-api#7" />
+      <item itemvalue="HTTP Request.rest-api#8" />
+      <item itemvalue="HTTP Request.rest-api#9" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.rest-api#9" />
+        <item itemvalue="HTTP Request.rest-api#8" />
+        <item itemvalue="HTTP Request.rest-api#7" />
+        <item itemvalue="HTTP Request.rest-api#4" />
+        <item itemvalue="HTTP Request.rest-api#6" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -456,7 +877,7 @@
       <workItem from="1596521291900" duration="42696000" />
       <workItem from="1596604159671" duration="59678000" />
       <workItem from="1596739195307" duration="9581000" />
-      <workItem from="1596748928232" duration="1358000" />
+      <workItem from="1596748928232" duration="3376000" />
     </task>
     <task id="LOCAL-00001" summary="бекап">
       <created>1596718120637</created>
@@ -500,7 +921,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596749875335</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Init">
+      <created>1596750342681</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596750342681</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,26 +976,26 @@
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state x="4685" y="733" key="Github.UntrackedFilesDialog/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596749334186" />
-    <state width="1910" height="283" key="GridCell.Tab.0.bottom" timestamp="1596750274440">
+    <state width="1910" height="283" key="GridCell.Tab.0.bottom" timestamp="1596752330110">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state width="1660" height="258" key="GridCell.Tab.0.bottom/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114923" />
-    <state width="1910" height="283" key="GridCell.Tab.0.bottom/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596750274440" />
-    <state width="1910" height="283" key="GridCell.Tab.0.center" timestamp="1596750274439">
+    <state width="1910" height="283" key="GridCell.Tab.0.bottom/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596752330110" />
+    <state width="1910" height="283" key="GridCell.Tab.0.center" timestamp="1596752330109">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state width="1660" height="258" key="GridCell.Tab.0.center/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114922" />
-    <state width="1910" height="283" key="GridCell.Tab.0.center/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596750274439" />
-    <state width="1910" height="283" key="GridCell.Tab.0.left" timestamp="1596750274439">
+    <state width="1910" height="283" key="GridCell.Tab.0.center/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596752330109" />
+    <state width="1910" height="283" key="GridCell.Tab.0.left" timestamp="1596752330109">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state width="1660" height="258" key="GridCell.Tab.0.left/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114922" />
-    <state width="1910" height="283" key="GridCell.Tab.0.left/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596750274439" />
-    <state width="1910" height="283" key="GridCell.Tab.0.right" timestamp="1596750274440">
+    <state width="1910" height="283" key="GridCell.Tab.0.left/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596752330109" />
+    <state width="1910" height="283" key="GridCell.Tab.0.right" timestamp="1596752330109">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state width="1660" height="258" key="GridCell.Tab.0.right/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114923" />
-    <state width="1910" height="283" key="GridCell.Tab.0.right/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596750274440" />
+    <state width="1910" height="283" key="GridCell.Tab.0.right/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596752330109" />
     <state width="1661" height="390" key="GridCell.Tab.1.bottom" timestamp="1596734395757">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
@@ -620,10 +1048,10 @@
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state x="4465" y="535" key="SettingsEditor/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748840284" />
-    <state x="4539" y="718" key="Vcs.Push.Dialog.v2" timestamp="1596749879727">
+    <state x="4539" y="718" key="Vcs.Push.Dialog.v2" timestamp="1596750351289">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
-    <state x="4539" y="718" key="Vcs.Push.Dialog.v2/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596749879727" />
+    <state x="4539" y="718" key="Vcs.Push.Dialog.v2/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596750351289" />
     <state x="4217" y="590" width="1518" height="976" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596699891085">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>

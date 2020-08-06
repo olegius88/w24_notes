@@ -28,7 +28,7 @@ class Api {
 		 */
 		this.validTokens = {}
 		// Для теста
-		// this.validTokens['1'] = 'KitYxBAggryo1sTnCYeUVul6DLo='
+		this.validTokens['1'] = 'KitYxBAggryo1sTnCYeUVul6DLo='
 	}
 
 
@@ -86,7 +86,7 @@ class Api {
 			console.error('changeUserToken|!$data.user_id|$data=', $data)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -111,14 +111,14 @@ class Api {
 			console.error('changeUserToken|update|error=', error)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
 		if (!updRes[0]) {
 			return {
 				status: 'user_not_found',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -151,14 +151,14 @@ class Api {
 			return {
 				status: 'error',
 				msg   : 'email incorrect',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 		if (!$data.password) {
 			return {
 				status: 'error',
 				msg   : 'password incorrect',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -172,7 +172,7 @@ class Api {
 			return {
 				status: 'error',
 				msg   : 'Ошибка в получении данных',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -180,7 +180,7 @@ class Api {
 			return {
 				status: 'not_found',
 				msg   : 'Пользователь не найден',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -188,7 +188,7 @@ class Api {
 			return {
 				status: 'credential_error',
 				msg   : 'Пароль не верен.',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -313,7 +313,7 @@ class Api {
 			console.error('logout|update|error=', error)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -394,14 +394,14 @@ reg|cuRes= {
 			console.error('tokenValidator|!$data.user_id|$data=', $data)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 		if (!$data.token) {
 			console.error('tokenValidator|!$data.token|$data=', $data)
 			return {
 				status: 'error',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
@@ -410,20 +410,20 @@ reg|cuRes= {
 		if (!ClsApi.validTokens[user_id]) {
 			return {
 				status: 'token_invalid',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
 		if (ClsApi.validTokens[user_id] != $data.token) {
 			return {
 				status: 'token_invalid',
-				line  : __fili,
+				// line  : __fili,
 			}
 		}
 
 		return {
 			status: 'ok',
-			line  : __fili,
+			// line  : __fili,
 		}
 	}
 }
