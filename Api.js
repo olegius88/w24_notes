@@ -122,11 +122,11 @@ class Api {
 			}
 		}
 
-		const user_id = $data.user_id.toString();
+		const userId = $data.user_id.toString();
 		// Запись в переменную для сравнивания
-		ClsApi.validTokens[user_id] = shortToken;
+		ClsApi.validTokens[userId] = shortToken;
 		// Удаление записи через указанное время
-		setTimeout(ClsApi._clearUserValidTokens, (ClsApi.tokenLifetimeSec*1000), user_id);
+		setTimeout(ClsApi._clearUserValidTokens, (ClsApi.tokenLifetimeSec*1000), userId);
 
 
 		return {
@@ -212,6 +212,8 @@ class Api {
 		// Если токен не просрочен (для случаев, когда сервис перезагружался и все переменные очистились)
 		if (fRes.api_token_end_unix_time > moment().unix()) {
 			ClsApi.validTokens[userId] = fRes.api_token;
+			// Удаление записи через оставшееся время жизни
+			setTimeout(ClsApi._clearUserValidTokens, (fRes.api_token_end_unix_time - moment().unix()), userId);
 			return {
 				status : 'ok',
 				token  : fRes.api_token,

@@ -39,6 +39,68 @@ class Notes {
 
 
 	/**
+	 * Указанная заметка
+	 *
+	 * @param $data
+	 * @returns {Promise<{notes: *[], status: string}|{msg: string, status: string}|{msg: string, line: *, status: string}|void>}
+	 */
+	async noteApi($data) {
+		console.log('noteApi|$data=', $data)
+
+		// Проверка токена
+		const tvRes = await Api.tokenValidator({
+			user_id: $data.user_id,
+			token  : $data.token,
+		})
+		// console.log('notes|tvRes=', tvRes)
+		if (tvRes.status != 'ok') {
+			return tvRes
+		}
+
+		const gRes =  await this.getNote({
+			note_id: $data.note_id,
+		})
+		// console.log('noteBrowser|gRes=', gRes)
+		/*
+notes|nbRes= {
+ status: 'ok',
+ note: {
+	 id: 1,
+	 user_id: 1,
+	 shared: null,
+	 note_text: 'dgdfgdfgdfg',
+	 createdAt: 2020-08-06T04:35:34.000Z,
+	 updatedAt: 2020-08-06T04:35:34.000Z
+ }
+}   */
+
+		if (gRes.status != 'ok') {
+			return gRes
+		}
+
+		if (!gRes.note.shared && $data.user_id != gRes.note.user_id) {
+			return {
+				status: 'need_auth',
+				msg   : 'Требуется авторизация для доступа к заметке',
+				// line  : __fili,
+			}
+		}
+
+		if (!gRes.note) {
+			return {
+				status: 'not_found',
+				msg   : 'Заметка не найдена',
+				// line  : __fili,
+			}
+		}
+
+		gRes.note.status = 'ok'
+
+		return gRes.note
+	}
+
+
+	/**
 	 * Получение заметки для браузера
 	 */
 	async noteSharedBrowser(req) {
@@ -47,7 +109,7 @@ class Notes {
 		const gRes =  await this.getNote({
 			note_id: req.params.note_id,
 		})
-		console.log('noteBrowser|gRes=', gRes)
+		// console.log('noteBrowser|gRes=', gRes)
 		/*
 notes|nbRes= {
  status: 'ok',

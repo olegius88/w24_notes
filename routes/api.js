@@ -71,6 +71,21 @@ router.get('/notes', async function(req, res, next) {
 
 
 /*
+Просмотр заметки
+ */
+router.get('/note/:note_id(\\d+)', async function(req, res, next) {
+  const nRes = await Notes.noteApi({
+    user_id      : req.query.user_id,
+    token        : req.query.token,
+
+    note_id: req.params.note_id,
+  })
+  // delete nRes.line
+  res.json(nRes)
+});
+
+
+/*
 Добавление заметки
  */
 router.get('/notes/add', async function(req, res, next) {

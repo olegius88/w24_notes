@@ -109,7 +109,7 @@ notes|nbRes= {
 router.get('/:note_id(\\d+)', async function(req, res, next) {
 
   const nbRes = await Notes.noteSharedBrowser(req)
-  console.log('notes|nbRes=', nbRes)
+  // console.log('notes|nbRes=', nbRes)
   /*
  notes|nbRes= {
   status: 'ok',
