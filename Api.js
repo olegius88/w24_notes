@@ -19,7 +19,7 @@ class Api {
 		 * Время жизни токена
 		 * @type {number}
 		 */
-		this.tokenLifetimeSec = 3000;
+		this.tokenLifetimeSec = 30000;
 
 
 		/**
@@ -28,7 +28,7 @@ class Api {
 		 */
 		this.validTokens = {}
 		// Для теста
-		this.validTokens['1'] = 'KitYxBAggryo1sTnCYeUVul6DLo='
+		// this.validTokens['1'] = 'KitYxBAggryo1sTnCYeUVul6DLo='
 	}
 
 

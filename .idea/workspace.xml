@@ -20,30 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f43c54d-2e80-4641-849a-98ea4fe20c70" name="Default Changelist" comment="Init">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T060449.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T061002.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T061101.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T061107.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T061254.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T061518.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T063624.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T063643.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T063649.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-05T063754.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-06T121730.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2020-08-06T122125.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/add_user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/add_user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/notes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/note_add.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/note_add.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/note_edit.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/note_edit.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/notes.twig" beforeDir="false" afterPath="$PROJECT_DIR$/views/notes.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -877,7 +854,7 @@
       <workItem from="1596521291900" duration="42696000" />
       <workItem from="1596604159671" duration="59678000" />
       <workItem from="1596739195307" duration="9581000" />
-      <workItem from="1596748928232" duration="3376000" />
+      <workItem from="1596748928232" duration="3654000" />
     </task>
     <task id="LOCAL-00001" summary="бекап">
       <created>1596718120637</created>
@@ -928,7 +905,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596750342681</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Init">
+      <created>1596752359017</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596752359017</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1048,10 +1032,10 @@
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state x="4465" y="535" key="SettingsEditor/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748840284" />
-    <state x="4539" y="718" key="Vcs.Push.Dialog.v2" timestamp="1596750351289">
+    <state x="4539" y="718" key="Vcs.Push.Dialog.v2" timestamp="1596752395341">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
-    <state x="4539" y="718" key="Vcs.Push.Dialog.v2/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596750351289" />
+    <state x="4539" y="718" key="Vcs.Push.Dialog.v2/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596752395341" />
     <state x="4217" y="590" width="1518" height="976" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596699891085">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
