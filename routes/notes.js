@@ -108,7 +108,7 @@ notes|nbRes= {
  */
 router.get('/:note_id(\\d+)', async function(req, res, next) {
 
-  const nbRes = await Notes.noteBrowser(req)
+  const nbRes = await Notes.noteSharedBrowser(req)
   console.log('notes|nbRes=', nbRes)
   /*
  notes|nbRes= {
@@ -124,15 +124,13 @@ router.get('/:note_id(\\d+)', async function(req, res, next) {
 }   */
 
   if (nbRes.status != 'ok'){
-    return res.render('error', {title: 'Просмотр заметки', message: nbRes.msg,});
+    return res.render('error', {title: 'Просмотр заметки', message: 'Заметка не доступна',});
   }
 
   res.render('note', {
     title   : 'Просмотр заметки',
     note    : nbRes.note,
-    btnText : 'Редактировать',
     noteId  : req.params.note_id,
-    hostname: `${req.hostname}:3000`,
   });
 });
 

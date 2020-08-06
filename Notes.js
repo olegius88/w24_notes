@@ -41,6 +41,52 @@ class Notes {
 	/**
 	 * Получение заметки для браузера
 	 */
+	async noteSharedBrowser(req) {
+		// console.log('noteSharedBrowser|req=', req)
+
+		const gRes =  await this.getNote({
+			note_id: req.params.note_id,
+		})
+		console.log('noteBrowser|gRes=', gRes)
+		/*
+notes|nbRes= {
+ status: 'ok',
+ note: {
+	 id: 1,
+	 user_id: 1,
+	 shared: null,
+	 note_text: 'dgdfgdfgdfg',
+	 createdAt: 2020-08-06T04:35:34.000Z,
+	 updatedAt: 2020-08-06T04:35:34.000Z
+ }
+}   */
+
+		if (gRes.status != 'ok') {
+			return gRes
+		}
+
+		if (!gRes.note) {
+			return {
+				status: 'not_found',
+				msg   : 'Заметка не найдена',
+				line  : __fili,
+			}
+		}
+		if (!gRes.note.shared) {
+			return {
+				status: 'not_found',
+				msg   : 'Заметка не найдена',
+				line  : __fili,
+			}
+		}
+
+		return gRes
+	}
+
+
+	/**
+	 * Получение заметки для браузера
+	 */
 	async noteBrowser(req) {
 		// console.log('notesBrowser|req=', req)
 

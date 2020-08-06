@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4f43c54d-2e80-4641-849a-98ea4fe20c70" name="Default Changelist" comment="Init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/notes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -393,7 +394,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.Auth.test.js">
+  <component name="RunManager" selected="Node.js.app.js">
     <configuration name=" Регистрация пользователя через АПИ" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -455,7 +456,7 @@
       <workItem from="1596521291900" duration="42696000" />
       <workItem from="1596604159671" duration="59678000" />
       <workItem from="1596739195307" duration="9581000" />
-      <workItem from="1596748928232" duration="927000" />
+      <workItem from="1596748928232" duration="1358000" />
     </task>
     <task id="LOCAL-00001" summary="бекап">
       <created>1596718120637</created>
@@ -492,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596749628266</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Init">
+      <created>1596749875335</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596749875335</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,26 +548,26 @@
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state x="4685" y="733" key="Github.UntrackedFilesDialog/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596749334186" />
-    <state width="1910" height="283" key="GridCell.Tab.0.bottom" timestamp="1596748852050">
+    <state width="1910" height="283" key="GridCell.Tab.0.bottom" timestamp="1596750274440">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state width="1660" height="258" key="GridCell.Tab.0.bottom/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114923" />
-    <state width="1910" height="283" key="GridCell.Tab.0.bottom/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748852050" />
-    <state width="1910" height="283" key="GridCell.Tab.0.center" timestamp="1596748852050">
+    <state width="1910" height="283" key="GridCell.Tab.0.bottom/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596750274440" />
+    <state width="1910" height="283" key="GridCell.Tab.0.center" timestamp="1596750274439">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state width="1660" height="258" key="GridCell.Tab.0.center/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114922" />
-    <state width="1910" height="283" key="GridCell.Tab.0.center/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748852050" />
-    <state width="1910" height="283" key="GridCell.Tab.0.left" timestamp="1596748852050">
+    <state width="1910" height="283" key="GridCell.Tab.0.center/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596750274439" />
+    <state width="1910" height="283" key="GridCell.Tab.0.left" timestamp="1596750274439">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state width="1660" height="258" key="GridCell.Tab.0.left/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114922" />
-    <state width="1910" height="283" key="GridCell.Tab.0.left/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748852050" />
-    <state width="1910" height="283" key="GridCell.Tab.0.right" timestamp="1596748852050">
+    <state width="1910" height="283" key="GridCell.Tab.0.left/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596750274439" />
+    <state width="1910" height="283" key="GridCell.Tab.0.right" timestamp="1596750274440">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state width="1660" height="258" key="GridCell.Tab.0.right/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114923" />
-    <state width="1910" height="283" key="GridCell.Tab.0.right/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748852050" />
+    <state width="1910" height="283" key="GridCell.Tab.0.right/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596750274440" />
     <state width="1661" height="390" key="GridCell.Tab.1.bottom" timestamp="1596734395757">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
@@ -612,10 +620,10 @@
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
     <state x="4465" y="535" key="SettingsEditor/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748840284" />
-    <state x="4539" y="718" key="Vcs.Push.Dialog.v2" timestamp="1596749716232">
+    <state x="4539" y="718" key="Vcs.Push.Dialog.v2" timestamp="1596749879727">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
-    <state x="4539" y="718" key="Vcs.Push.Dialog.v2/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596749716232" />
+    <state x="4539" y="718" key="Vcs.Push.Dialog.v2/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596749879727" />
     <state x="4217" y="590" width="1518" height="976" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596699891085">
       <screen x="3840" y="0" width="3072" height="1698" />
     </state>
