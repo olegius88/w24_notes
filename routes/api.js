@@ -148,6 +148,28 @@ router.post('/notes/share/:note_id(\\d+)', async function (req, res, next) {
   res.json(naRes)
 });
 
+/*
+Закрытие расшаринной заметки для неавторизованного пользователя
+ */
+router.get('/notes/unshare/:note_id(\\d+)', async function (req, res, next) {
+  const naRes = await Notes.notesShare({
+    user_id: req.query.user_id,
+    token  : req.query.token,
+    note_id: req.params.note_id,
+  })
+  // delete naRes.line
+  res.json(naRes)
+});
+router.post('/notes/unshare/:note_id(\\d+)', async function (req, res, next) {
+  const naRes = await Notes.notesShare({
+    user_id: req.query.user_id,
+    token  : req.query.token,
+    note_id: req.params.note_id,
+  })
+  // delete naRes.line
+  res.json(naRes)
+});
+
 
 /*
 Удаление заметки
