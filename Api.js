@@ -12,7 +12,7 @@ const Auth = require('./Auth');
 class Api {
 
 	constructor() {
-		console.log('Api|constructor',)
+		// console.log('Api|constructor',)
 
 
 		/**
