@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f43c54d-2e80-4641-849a-98ea4fe20c70" name="Default Changelist" comment="Init">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fcdPWat0ayJ06Sf7cQiQQdTRQw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.7.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.0.27" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/__tests__/Notes.test.js" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\phpstorm\projects\w24_notes\public\javascripts\jquery-validation" />
+      <recent name="F:\phpstorm\projects\w24_notes\_" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\phpstorm\projects\w24_notes\views" />
+      <recent name="F:\phpstorm\projects\w24_notes\routes" />
+      <recent name="F:\phpstorm\projects\w24_notes\public\javascripts" />
+      <recent name="F:\phpstorm\projects\w24_notes\public\stylesheets" />
+      <recent name="F:\phpstorm\projects\w24_notes\_" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes/remove/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes/remove/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes/edit/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="note_text" />
+                <option name="value" value="787878787878888" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/notes/edit/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="token" />
+                <option name="value" value="KitYxBAggryo1sTnCYeUVul6DLo=" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="note_text" />
+                <option name="value" value="78787878787" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/auth" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="sh.oleg@list.ru" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12121" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/auth" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="sh.oleg@list.ru" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="1212" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/auth" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="sh.oleg@list.ru" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="1212" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/reg" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="email" />
+                <option name="value" value="sh.oleg@list.ru" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="1212" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://127.0.0.1:3000/api/reg/email=sh.oleg@list.ru&amp;password=1212" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Jest.Notes.test.js">
+    <configuration name=" Авторизация пользователя через АПИ" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/Api.test.js" />
+      <test-names>
+        <test-name value=" Авторизация пользователя через АПИ" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Авторизация пользователя через АПИ" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/Api.test.js" />
+      <test-names>
+        <test-name value="Авторизация пользователя через АПИ" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="регистрация пользователя через браузер" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/Auth.test.js" />
+      <test-names>
+        <test-name value="регистрация пользователя через браузер" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Добавление заметки" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/Notes.test.js" />
+      <test-names>
+        <test-name value="Добавление заметки" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Редактирование заметки" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/Notes.test.js" />
+      <test-names>
+        <test-name value="Редактирование заметки" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name=" Регистрация пользователя через АПИ" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/Api.test.js" />
+      <test-names>
+        <test-name value=" Регистрация пользователя через АПИ" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.rest-api#1" />
+      <item itemvalue="HTTP Request.rest-api#2" />
+      <item itemvalue="HTTP Request.rest-api#3" />
+      <item itemvalue="HTTP Request.rest-api#4" />
+      <item itemvalue="HTTP Request.rest-api#5" />
+      <item itemvalue="Jest.jest.config.js" />
+      <item itemvalue="Jest.Api.test.js" />
+      <item itemvalue="Jest.Notes.test.js" />
+      <item itemvalue="Jest.Auth.test.js" />
+      <item itemvalue="Jest.регистрация пользователя через браузер" />
+      <item itemvalue="Jest. Регистрация пользователя через АПИ" />
+      <item itemvalue="Jest. Авторизация пользователя через АПИ" />
+      <item itemvalue="Jest.Авторизация пользователя через АПИ" />
+      <item itemvalue="Node.js.app.js" />
+      <item itemvalue="Jest.Добавление заметки" />
+      <item itemvalue="Jest.Редактирование заметки" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Редактирование заметки" />
+        <item itemvalue="Jest.Добавление заметки" />
+        <item itemvalue="Jest.Авторизация пользователя через АПИ" />
+        <item itemvalue="Jest. Авторизация пользователя через АПИ" />
+        <item itemvalue="Jest. Регистрация пользователя через АПИ" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Oleg\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f43c54d-2e80-4641-849a-98ea4fe20c70" name="Default Changelist" comment="" />
+      <created>1596521290658</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596521290658</updated>
+      <workItem from="1596521291900" duration="42696000" />
+      <workItem from="1596604159671" duration="59678000" />
+      <workItem from="1596739195307" duration="9581000" />
+    </task>
+    <task id="LOCAL-00001" summary="бекап">
+      <created>1596718120637</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596718120637</updated>
+    </task>
+    <task id="LOCAL-00002" summary="бекап">
+      <created>1596748022271</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596748022272</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="бекап" />
+    <option name="LAST_COMMIT_MESSAGE" value="бекап" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="4350" y="640" width="1089" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596747457072">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state x="4350" y="640" width="1089" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596747457072" />
+    <state x="4686" y="669" width="1413" height="440" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1596521629721">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state x="4686" y="669" width="1413" height="440" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596521629721" />
+    <state x="4686" y="815" key="FileChooserDialogImpl" timestamp="1596745592563">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state x="813" y="829" key="FileChooserDialogImpl/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596568139369" />
+    <state x="4686" y="815" key="FileChooserDialogImpl/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596745592563" />
+    <state x="4824" y="929" key="Github.ShareDialog" timestamp="1596748658913">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state x="4824" y="929" key="Github.ShareDialog/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748658913" />
+    <state width="1910" height="283" key="GridCell.Tab.0.bottom" timestamp="1596748852050">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1660" height="258" key="GridCell.Tab.0.bottom/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114923" />
+    <state width="1910" height="283" key="GridCell.Tab.0.bottom/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748852050" />
+    <state width="1910" height="283" key="GridCell.Tab.0.center" timestamp="1596748852050">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1660" height="258" key="GridCell.Tab.0.center/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114922" />
+    <state width="1910" height="283" key="GridCell.Tab.0.center/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748852050" />
+    <state width="1910" height="283" key="GridCell.Tab.0.left" timestamp="1596748852050">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1660" height="258" key="GridCell.Tab.0.left/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114922" />
+    <state width="1910" height="283" key="GridCell.Tab.0.left/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748852050" />
+    <state width="1910" height="283" key="GridCell.Tab.0.right" timestamp="1596748852050">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1660" height="258" key="GridCell.Tab.0.right/0.0.2953.1728/3840.0.3072.1698@0.0.2953.1728" timestamp="1596604114923" />
+    <state width="1910" height="283" key="GridCell.Tab.0.right/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748852050" />
+    <state width="1661" height="390" key="GridCell.Tab.1.bottom" timestamp="1596734395757">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.1.bottom/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395757" />
+    <state width="1661" height="390" key="GridCell.Tab.1.center" timestamp="1596734395757">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.1.center/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395757" />
+    <state width="1661" height="390" key="GridCell.Tab.1.left" timestamp="1596734395757">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.1.left/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395757" />
+    <state width="1661" height="390" key="GridCell.Tab.1.right" timestamp="1596734395757">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.1.right/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395757" />
+    <state width="1661" height="390" key="GridCell.Tab.2.bottom" timestamp="1596734395758">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.2.bottom/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395758" />
+    <state width="1661" height="390" key="GridCell.Tab.2.center" timestamp="1596734395757">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.2.center/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395757" />
+    <state width="1661" height="390" key="GridCell.Tab.2.left" timestamp="1596734395757">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.2.left/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395757" />
+    <state width="1661" height="390" key="GridCell.Tab.2.right" timestamp="1596734395757">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.2.right/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395757" />
+    <state width="1661" height="390" key="GridCell.Tab.3.bottom" timestamp="1596734395758">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.3.bottom/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395758" />
+    <state width="1661" height="390" key="GridCell.Tab.3.center" timestamp="1596734395758">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.3.center/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395758" />
+    <state width="1661" height="390" key="GridCell.Tab.3.left" timestamp="1596734395758">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.3.left/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395758" />
+    <state width="1661" height="390" key="GridCell.Tab.3.right" timestamp="1596734395758">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="1661" height="390" key="GridCell.Tab.3.right/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596734395758" />
+    <state x="4465" y="535" key="SettingsEditor" timestamp="1596748840284">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state x="4465" y="535" key="SettingsEditor/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748840284" />
+    <state x="4539" y="718" key="Vcs.Push.Dialog.v2" timestamp="1596748812390">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state x="4539" y="718" key="Vcs.Push.Dialog.v2/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596748812390" />
+    <state x="4217" y="590" width="1518" height="976" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596699891085">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state x="4217" y="590" width="1518" height="976" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596699891085" />
+    <state x="4787" y="765" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1596747943895">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state x="4787" y="765" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596747943895" />
+    <state width="307" height="99" key="javadoc.popup.new" timestamp="1596709167770">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state width="307" height="99" key="javadoc.popup.new/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596709167770" />
+    <state x="4646" y="618" width="672" height="678" key="search.everywhere.popup" timestamp="1596550005180">
+      <screen x="3840" y="0" width="3072" height="1698" />
+    </state>
+    <state x="4646" y="618" width="672" height="678" key="search.everywhere.popup/0.0.2953.1728/3840.0.3072.1698@3840.0.3072.1698" timestamp="1596550005180" />
+  </component>
+</project>

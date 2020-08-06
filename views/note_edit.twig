@@ -1,0 +1,347 @@
+{% extends 'layout.twig' %}
+
+{% block head %}
+	<!-- Bootstrap core CSS -->
+	<link rel='stylesheet' href='/stylesheets/assets/dist/css/bootstrap.css'/>
+
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+		em.invalid-feedback {
+			padding-bottom: 1em;
+		}
+	</style>
+	<!-- Custom styles for this template -->
+	<link href="/stylesheets/notes.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+	<body class="bg-light">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+		<a class="navbar-brand mr-auto mr-lg-0" href="#">Заметки</a>
+		<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		{% include 'nawbar.twig' %}
+	</nav>
+
+	<main role="main" class="container">
+
+		<div class="my-3 p-3 bg-white rounded shadow-sm">
+			<h6 class="border-bottom border-gray pb-2 mb-0">Редактирование заметки</h6>
+			<div class="row">
+				<div class="col-md-12 mb-3">
+					<form id="note_edit">
+						<div class="media text-muted pt-3">
+							<p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+								<strong class="d-block text-gray-dark">Создано: {{ note.createdAt|date('Y/d/m H:m') }}</strong>
+								<strong class="d-block text-gray-dark">Изменено: {{ note.updatedAt|date('Y/d/m H:m') }}</strong>
+
+								<input type="hidden" id="note_id" name="note_id" value="{{ noteId }}">
+
+								<textarea class="form-control mt-3 mb-2" name="note_text" rows="3">{{ note.note_text }}</textarea>
+
+								<span class="form-check mb-3">
+									<input class="form-check-input" type="checkbox" value="1" name="share_note" id="share_note" {% if note.shared == 'yes' %}checked{% endif %}>
+									<label class="form-check-label mt-0" for="defaultCheck1">Расшарить заметку для неавторизованного пользователя</label>
+
+
+										<span class="form-check" id="shared_link" style="{% if note.shared != 'yes' %}display: none;{% endif %}">
+											Публичная ссылка: <a href="http://{{ hostname }}/notes/{{ noteId }}">http://{{ hostname }}/notes/{{ noteId }}</a>
+										</span>
+
+								</span>
+
+								<button class="btn btn-primary" type="submit" id="btn_edit_note">{{ btnText }}</button>
+								<a class="btn btn-link" type="submit" href="/notes">Отмена</a>
+								<small class="d-block text-right mr-3">
+									<a class="btn btn-link warning" type="submit" id="remove_note_id">удалить</a>
+								</small>
+
+							</p>
+
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+
+	{% block jscode %}
+
+
+		<script src="/javascripts/plugins/jquery/jquery.min.js"></script>
+
+		<script src="/javascripts/offcanvas.js"></script>
+
+
+		<script src="/javascripts/jquery.maskedinput.js"></script>
+
+		<!-- Sweet-Alert  -->
+		<script src="/javascripts/plugins/sweetalert/sweetalert.min.js"></script>
+		<link href="/javascripts/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+
+		<script src="/javascripts/jquery.validate.min.js"></script>
+		<script src="/javascripts/jquery-validation/messages_ru.js"></script>
+
+
+		<script>
+
+			const $body = jQuery(document);
+
+
+			/*
+		 Отправить
+			*/
+			$body.on('click', '#share_note', function (e) {
+
+				const $this = $(this)
+				const $sharedLink = jQuery('#shared_link');
+				if (!$this.is(':checked')){
+					$sharedLink.hide()
+					return
+				}
+
+				e.preventDefault();
+
+				swal({
+					title             : "",
+					text              : 'Заметка будет доступна не авторизованным пользователям',
+					type              : "success",
+					showCancelButton  : true,
+					confirmButtonColor: "#DD6B55",
+					confirmButtonText : "Расшарить",
+					cancelButtonText  : "Отмена",
+					closeOnConfirm    : true,
+					timer             : 3000,
+				}, function (res) {
+
+					// console.log(`remove_note_id|res=`, res);
+					if (!res) {
+						return
+					}
+
+
+
+					if ($this.is(':checked')){
+						$this.prop('checked', false);
+						// $sharedLink.hide()
+						return
+					}
+
+					// $sharedLink.show()
+					$this.prop('checked', true);
+				});
+			})
+
+
+			/*
+		 Отправить
+			*/
+			$body.on('click', '#remove_note_id', function () {
+
+				swal({
+					title             : "",
+					text              : 'Заметка будет удалена',
+					type              : "success",
+					showCancelButton  : true,
+					confirmButtonColor: "#DD6B55",
+					confirmButtonText : "Удалить",
+					cancelButtonText  : "Отмена",
+					closeOnConfirm    : false,
+					timer             : 3000,
+				}, function (res) {
+
+					// console.log(`remove_note_id|res=`, res);
+					if (!res) {
+						return
+					}
+
+					jQuery.ajax({
+						type      : "POST",
+						url       : '/notes/remove/{{ noteId }}',
+						dataType  : 'json',
+						data      : {},
+						beforeSend: function () {
+							// btn.button('loading');
+						},
+						success   : function (data) {
+							console.log(`submitHandler|1|data=`, data);
+							if (data.status != 'ok') {
+								console.error(`submitHandler|2|data=`, data);
+								// btn.button('reset');
+								swal({
+									title: "ОШИБКА!",
+									text : data.msg,
+									type : "error"
+								});
+								return;
+							}
+
+							swal({
+								title             : "Успех",
+								text              : 'Заметка успешно удалена',
+								type              : "success",
+								showCancelButton  : false,
+								confirmButtonColor: "#DD6B55",
+								confirmButtonText : "OK",
+								closeOnConfirm    : false,
+								timer             : 3000,
+							}, function () {
+
+								window.location.href = '/';
+							});
+						},
+						error     : function (error) {
+							console.error(`submitHandler|error=`, error);
+							// console.error(`submitHandler|responseText=`, error.responseText);
+
+							// btn.button('reset');
+
+							swal({
+								title: "ОШИБКА!",
+								text : 'Не удалось отправить данные, попробуйте еще раз',
+								type : "error"
+							});
+						}
+					});
+				});
+			})
+
+
+			$body.on('click', '#note_edit', function () {
+
+				/*
+			 Отправить код
+				*/
+				jQuery.validator.addMethod("checkMask", function (value, element) {
+					return /^.{1,1000}$/g.test(value.trim());
+				});
+
+				// jQuery('#input_reg_name').focus();//.mask("9 9 9  9 9 9",);
+
+				jQuery(this).validate({
+					rules         : {
+						note_text: {
+							required : true,
+							checkMask: true,
+						}
+					},
+					messages      : {
+						note_text: {
+							required : "Пожалуйста, заполните поле",
+							checkMask: "Вы ввели некорректный email-адрес",
+						}
+					},
+					errorElement  : "em",
+					errorPlacement: function (error, element) {
+						// Add the `invalid-feedback` class to the error element
+						error.addClass("invalid-feedback");
+
+						if (element.prop("type") === "checkbox") {
+							error.insertAfter(element.next("label"));
+						} else {
+							error.insertAfter(element);
+						}
+					},
+					highlight     : function (element, errorClass, validClass) {
+						jQuery(element).addClass("is-invalid").removeClass("is-valid");
+					},
+					unhighlight   : function (element, errorClass, validClass) {
+						jQuery(element).addClass("is-valid").removeClass("is-invalid");
+					},
+					submitHandler : function (form) {
+
+						const $form = jQuery(form);
+						const btn   = $form.find('#btn_edit_note');
+
+						const noteId = $form.find('input#note_id').val()
+
+						if (noteId < 1) {
+							swal({
+								title: "ОШИБКА!",
+								text : 'Ошибка в системе, не известный номер заметки',
+								type : "error"
+							});
+							return false;
+						}
+
+						console.log(` $form.serialize()=`, $form.serialize());
+
+
+						jQuery.ajax({
+							type      : "POST",
+							url       : '/notes/edit/{{ noteId }}',
+							dataType  : 'json',
+							data      : $form.serialize(),
+							beforeSend: function () {
+								// btn.button('loading');
+							},
+							success   : function (data) {
+								console.log(`submitHandler|1|data=`, data);
+								if (data.status != 'ok') {
+									console.error(`submitHandler|2|data=`, data);
+									// btn.button('reset');
+									swal({
+										title: "ОШИБКА!",
+										text : data.msg,
+										type : "error"
+									});
+									return;
+								}
+
+								swal({
+									title             : "Успех",
+									text              : 'Регистрация успешно завершена',
+									type              : "success",
+									showCancelButton  : false,
+									confirmButtonColor: "#DD6B55",
+									confirmButtonText : "OK",
+									closeOnConfirm    : false,
+									timer             : 3000,
+								}, function () {
+
+									window.location.reload()
+								});
+							},
+							error     : function (error) {
+								console.error(`submitHandler|error=`, error);
+								// console.error(`submitHandler|responseText=`, error.responseText);
+
+								// btn.button('reset');
+
+								swal({
+									title: "ОШИБКА!",
+									text : 'Не удалось отправить данные, попробуйте еще раз',
+									type : "error"
+								});
+							}
+						});
+
+						return false;
+					},
+				});
+			});
+
+
+		</script>
+	{% endblock %}
+	</body>
+{% endblock %}

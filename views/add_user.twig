@@ -1,0 +1,223 @@
+{% extends 'layout.twig' %}
+
+{% block head %}
+  <!-- Bootstrap core CSS -->
+  <link rel='stylesheet' href='/stylesheets/assets/dist/css/bootstrap.css' />
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    label.error {
+      color: #dc3545;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="/stylesheets/form-validation.css" rel="stylesheet">
+
+{% endblock %}
+
+{% block body %}
+  <body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="/images/logo_n-min.png" alt="" width="72">
+      <h2>Регистрация</h2>
+    </div>
+
+{#    <div class="alert alert-warning alert-dismissible fade show" role="alert">#}
+{#      <strong>Holy guacamole!</strong> You should check in on some of those fields below.#}
+{#      <button type="button" class="close" data-dismiss="alert" aria-label="Close">#}
+{#        <span aria-hidden="true">&times;</span>#}
+{#      </button>#}
+{#    </div>#}
+
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <form id="add_user">
+          <div class="mb-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="psw1">Пароль</label>
+            <input type="password" class="form-control" id="psw1" name="psw1" placeholder="" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="psw2">Повторить пароль</label>
+            <input type="password" class="form-control" id="psw2" name="psw2" placeholder="" required>
+          </div>
+
+          <button class="btn btn-primary btn-lg btn-block" type="submit" id="add_user_btn">Зарегистрироваться</button>
+          <div class="mb-3 text-center">
+            <br>
+            <p>Зарегистрированы в системе? <a href="/">Войти</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  {% block jscode %}
+
+
+    <script src="/javascripts/plugins/jquery/jquery.min.js"></script>
+    <script src="/javascripts/jquery.maskedinput.js"></script>
+
+    <!-- Sweet-Alert  -->
+    <script src="/javascripts/plugins/sweetalert/sweetalert.min.js"></script>
+    <link href="/javascripts/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+
+    <script src="/javascripts/jquery.validate.min.js"></script>
+    <script src="/javascripts/jquery-validation/messages_ru.js"></script>
+
+
+    <script>
+
+      const $body = jQuery(document);
+
+      /*
+		 Отправить
+			*/
+      // jQuery('#input_reg_name').focus();//.mask("9 9 9  9 9 9",);
+
+      $body.on('click','#add_user', function () {
+
+        /*
+			 Отправить код
+				*/
+        jQuery.validator.addMethod("checkMask", function (value, element) {
+          return /^.{2,250}$/g.test(value.trim());
+        });
+        jQuery.validator.addMethod("isEmail", function (value, element) {
+          return /^\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i.test(value.trim());
+        });
+
+        // jQuery('#input_reg_name').focus();//.mask("9 9 9  9 9 9",);
+
+        jQuery(this).validate({
+          rules        : {
+            email: {
+              required : true,
+              isEmail: true,
+            }
+          },
+          messages     : {
+            email: {
+              required : "Пожалуйста, заполните поле",
+              isEmail: "Вы ввели некорректный email-адрес",
+            }
+          },
+          errorElement: "em",
+          errorPlacement: function (error, element) {
+            // Add the `invalid-feedback` class to the error element
+            error.addClass("invalid-feedback");
+
+            if (element.prop("type") === "checkbox") {
+              error.insertAfter(element.next("label"));
+            } else {
+              error.insertAfter(element);
+            }
+          },
+          highlight: function (element, errorClass, validClass) {
+            $(element).addClass("is-invalid").removeClass("is-valid");
+          },
+          unhighlight: function (element, errorClass, validClass) {
+            $(element).addClass("is-valid").removeClass("is-invalid");
+          },
+          submitHandler: function (form) {
+
+            const $form = jQuery(form);
+            const btn = $form.find('#add_user_btn');
+
+            const psw1 = $form.find('input#psw1').val()
+            const psw2 = $form.find('input#psw2').val()
+
+            if (psw1 != psw2) {
+              swal({
+                title: "ОШИБКА!",
+                text : 'Введенные пароли не одинаковые',
+                type : "error"
+              });
+              return false;
+            }
+
+            jQuery.ajax({
+              type      : "POST",
+              url       : '/add_user',
+              dataType  : 'json',
+              data      : {
+                act       : 'add_user',
+                email: $form.find('input#email').val(),
+                psw1: psw1,
+                psw2: psw2,
+              },
+              beforeSend: function () {
+                // btn.button('loading');
+              },
+              success   : function (data) {
+                console.log(`submitHandler|1|data=`, data);
+                if (data.status != 'ok') {
+                  console.error(`submitHandler|2|data=`, data);
+                  // btn.button('reset');
+                  swal({
+                    title: "ОШИБКА!",
+                    text : data.msg,
+                    type : "error"
+                  });
+                  return;
+                }
+
+                swal({
+                  title             : "Успех",
+                  text              : 'Регистрация успешно завершена',
+                  type              : "success",
+                  showCancelButton  : false,
+                  confirmButtonColor: "#DD6B55",
+                  confirmButtonText : "OK",
+                  closeOnConfirm    : false,
+                  timer             : 3000,
+                }, function () {
+
+                  window.location.href = '/';
+                });
+              },
+              error     : function (error) {
+                console.error(`submitHandler|error=`, error);
+                // console.error(`submitHandler|responseText=`, error.responseText);
+
+                // btn.button('reset');
+
+                swal({
+                  title: "ОШИБКА!",
+                  text : 'Не удалось отправить данные, попробуйте еще раз',
+                  type : "error"
+                });
+              }
+            });
+
+            return false;
+          },
+        });
+      });
+
+
+
+
+    </script>
+  {% endblock %}
+{% endblock %}
